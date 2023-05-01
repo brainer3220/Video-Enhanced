@@ -3,7 +3,7 @@ from glob import glob
 
 
 def model_download():
-    os.system("""python SCUNet/main_download_pretrained_models.py --models "SCUNet" --model_dir "model_zoo""")
+    os.system("""python SCUNet/main_download_pretrained_models.py --models "SCUNet" --model_dir "SCUNet/model_zoo""")
 
 
 def get_video_file(path):
