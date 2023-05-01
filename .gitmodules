@@ -1,0 +1,4 @@
+[submodule "SCUNet"]
+	url = https://github.com/brainer3220/SCUNet
+[submodule "bsrgan"]
+	url = https://github.com/brainer3220/BSRGAN
