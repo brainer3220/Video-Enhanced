@@ -1,22 +1,10 @@
 import os
-from glob import glob
+
+from utility.utility import get_video_file, make_directory, get_directory
 
 
 def model_download():
     os.system("""python SCUNet/main_download_pretrained_models.py --models "SCUNet" --model_dir "SCUNet/model_zoo""")
-
-
-def get_video_file(path):
-    return glob(path + "/*.mp4")
-
-
-def get_directory(path):
-    return glob(path + "/*")
-
-
-def make_directory(path):
-    if not os.path.isdir(path):
-        os.mkdir(path)
 
 
 def main():
