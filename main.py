@@ -20,11 +20,7 @@ def main():
 
     for dir in get_directory("./low_quality"):
         abs_dir_path = os.path.abspath(dir)
-        print(abs_dir_path)
-        os.chdir("SCUNet")
-        os.system(
-            "python main_test_scunet_real_application.py --model_name scunet_color_real_psnr --testset_name " + "/Users/brainer/Programming/video-super-res/low_quality" + " --testsets " + "new" + " --results /Users/brainer/Programming/video-super-res/enhanced")
-        os.chdir("..")
+        os.system("python ddpm/main.py --image-dir " + abs_dir_path)
 
 
 if __name__ == "__main__":
